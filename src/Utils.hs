@@ -173,7 +173,7 @@ relPaths (q,y)     = [ prefix ++ suffix | suffix <- suffixes ]
   where prefix      = foldr (</>) y (qualifierNodes q)
 
 suffixes           :: [String]
-suffixes            = [".hs",".lhs", ".imports"]
+suffixes            = [".hs",".lhs", ".elm", ".imports"]
 
 -- | The files in which a module might reside.
 -- We report only files that exist.
